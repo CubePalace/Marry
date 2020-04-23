@@ -1,0 +1,13 @@
+name: Marry
+author: RoboticPlayer
+version: 1.0
+api-version: 1.15
+main: com.cubepalace.marry.Marry
+
+commands:
+  marry:
+    description: Main command of the plugin
+
+permissions:
+  marry.cmd:
+    description: Access to the plugin

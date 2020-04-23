@@ -1,0 +1,70 @@
+# When a player doesn't have permission for an action
+no-permission: "&cNo permission"
+# When the plugin is reloaded
+reload: "&aMarry has been reloaded"
+# When the console tries to use the command
+console-command: "&cThe console cannot use this command"
+
+# Messages for the propose subcommand
+propose:
+  # Trying to propose while married
+  married: "&cYou are already married"
+  # Missing player argument
+  usage: "&cUsage: /marry propose <player>"
+  # Player offline
+  offline: "&cThat player is not online"
+  # Attempting to self marry
+  self-marry: "&cYou cannot marry yourself. You must carry on. Alone."
+  # Trying to propose to a married player
+  target-married: "&cThat player is already married"
+  # Receiving a proposal
+  receive: "&a%PLAYER% has proposed to you!\nDo /marry accept %PLAYER% to accept their proposal\n&cOr do /marry reject %PLAYER% to reject their proposal"
+  # Confirmation of proposal sent
+  confirmation: "&aYour proposal has been sent to %PLAYER%"
+accept:
+  # When you don't have a pending proposal
+  no-pending: "&cNo pending proposals"
+  # Missing player argument
+  usage: "&cUsage: /marry accept <player>"
+  # Player offline
+  offline: "&cThat player is not online"
+  # No proposal from player
+  wrong-player: "&cYou do not have a pending proposal from that player"
+  # Server broadcast when married
+  broadcast: "&a%PLAYER1% and %PLAYER2% are now married!"
+reject:
+  # When you don't have a pending proposal
+  no-pending: "&cNo pending proposals"
+  # Missing player argument
+  usage: "&cUsage: /marry reject <player>"
+  # Player offline
+  offline: "&cThat player is not online"
+  # No proposal from player
+  wrong-player: "&cYou do not have a pending proposal from that player"
+  # Confirmation of proposal rejected
+  confirmation: "&aYou have rejected the proposal"
+  # Message sent to the proposer
+  proposer: "&c%PLAYER% has rejected your proposal"
+divorce:
+  # When you're not married
+  not-married: "&cYou are not married"
+  # Server broadcast when divorced
+  broadcast: "&c%PLAYER1% has divorced %PLAYER2%"
+status:
+  # Missing player argument
+  usage: "&cUsage: /marry status <player>"
+  # Not married
+  not-married: "&a%PLAYER1% is not married"
+  # Married
+  married: "&a%PLAYER1% is married to %PLAYER2%"
+list:
+  # Not a number
+  invalid: "&cExpected a number for page, but got %VALUE%"
+  # When nobody is married
+  no-couples: "&cNobody is married :("
+  # The header for the list
+  header: "&b---===[ Marry List ]===---"
+  # Format for page info
+  page-format: "&bPage %CURRENT% of %TOTAL%"
+  # Format for each entry
+  entry-format: "&a%PLAYER1% is married to %PLAYER2%"
